@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Esercizi su Ohm</title>
+</head>
+<body bgcolor ="#433fff">
+<script>
+var v=prompt("Inserisci la tensione");
+var r1=prompt("Inserisci la 1° resistenza");
+var r2=prompt("Inserisci la 2° resistenza");
+var d=prompt("Inserisci 0. se è in sono in serie o 1. se sono in parallelo");
+if(d==0){
+var rt=r1+r2;
+}
+else{
+var rt=(r1*r2)/(r1+r2);
+}
+var i= v/rt;
+document.write("I =",i," Ampere");
+</script>
+</body>
+</html>

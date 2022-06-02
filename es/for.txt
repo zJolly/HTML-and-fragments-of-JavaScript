@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Pag.1</title>
+</head>
+<body bgcolor="#123456">
+<center>
+<h1> fattoriale </h1>
+<script>
+giorni = new Array(7);
+giorni[0] = "lunedi";
+giorni[1] = "martedi";
+giorni[2] = "mercoledi";
+giorni[3] = "giovedi";
+giorni[4] = "venerdi";
+giorni[5] = "sabato";
+giorni[6] = "domenica";
+
+
+
+n = prompt ("inserisci il numero del giorno");
+if ( giorni[n] == "sabato" || giorni[n] == "domenica")
+{​​
+document.write( "il giorno numero ", n, "è ", giorni[n] );
+}​​
+</script>
+</body>
+</html>
+
+
+
+Esempio 
+for(i=o; n=<i;i++){
+}

@@ -1,0 +1,28 @@
+﻿<html lang="it">
+<head>
+    <title>Equazione 2° grado</title>
+</head>
+    <script language="JavaScript">
+        function eq2() {
+            var a = prompt("Inserisci il valore di a: ");
+            var b = prompt("Inserisci il valore di b: ");
+            var c = prompt("Inserisci il valore di c: ");
+            var delta = b * b - 4 * (a * c);
+            if (delta >= 0) {
+                var x1 = (-b + Math.sqrt(delta) / 2 * a);
+                var x2 = (-b - Math.sqrt(delta) / 2 * a);
+                document.write("x1=", x1, "<br>");
+                document.write("x2=", x2, "<br>");
+            }
+            else {
+                document.write("G di un G", "<br>");
+            }
+                    }
+    </script>
+    <body>
+    <centre><h1>EQUAZIONE DI SECONDO GRADO</h1></centre>
+    <script language="JavaScript">
+        eq2();
+    </script>
+</body>
+</html>

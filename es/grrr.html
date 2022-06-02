@@ -1,0 +1,37 @@
+﻿<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <title>Equazione Top</title>
+</head>
+<script>
+    var a, b, c;
+        function PullA() {
+            a = prompt("Inserisci il valore di a: ");
+        };
+        function PullB() {
+            b = prompt("Inserisci il valore di b: ");
+        };
+        function PullC() {
+            c = prompt("Inserisci il valore di c: ");
+        };
+        function Tot() {
+            var delta = b * b - 4 * (a * c);
+            if (delta >= 0) {
+                var x1 = (-b + Math.sqrt(delta) / 2 * a);
+                var x2 = (-b - Math.sqrt(delta) / 2 * a);
+                document.write("x1=", x1, "<br>");
+                document.write("x2=", x2, "<br>");
+            }
+            else {
+                document.write("G di un G", "<br>");
+            }
+        };
+</script>
+<body>
+    <h4>Clicca il bottone A/B/C per inserire un valore:</h4>
+    <input type="button" value="A" onclick="PullA()" /><br />
+    <input type="button" value="B" onclick="PullB()" /><br />
+    <input type="button" value="C" onclick="PullC()" /><br />
+    <input type="button" value="Risultato" onclick="Tot()" /><br />
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Cinema </title>
+<script>
+'use strict';
+function disegna() {
+var tag = document.getElementById("canvas");
+var contesto = tag.getContext("2d");
+contesto.beginPath();
+var nElementi = document.getElementById("quanti").value;
+for (var i=0; i < nElementi; i++){
+contesto.moveTo(200,200);
+contesto.lineTo(Math.random()*400,Math.random()*400);
+}
+contesto.stroke();
+}
+
+
+
+</script>
+</head>
+<body>
+
+<canvas width = "500" heigth = "500" id ="canvas" style="border: 2px solid #123abc ;"> </canvas>
+<p>
+Linea <input type ="text" value="10" id ="quanti">
+</p>
+<input type="button" value="disegna" onclick="disegna();">
+</body>
+</html>

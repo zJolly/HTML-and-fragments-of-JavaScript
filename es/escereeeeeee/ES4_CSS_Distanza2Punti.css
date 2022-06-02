@@ -1,0 +1,37 @@
+body{
+    font-family: Calibri;
+
+}
+.tabella{
+    border: solid;
+    border-left: transparent;
+    border-right: transparent;
+border-width: 2px;
+border-color: green;
+background-color: rgb(233, 233, 233);
+padding-left: 30px;
+margin-left: -10px;
+margin-right: -10px;
+}
+.output{
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 20px;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+h5{
+    margin-bottom: -5px;
+ margin-left: 60px;
+}
+h4{
+    padding-left: 110px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.puls{
+    background-color: rgb(130, 199, 130);
+    border-radius: 5px;
+    font-size: 16px;
+}

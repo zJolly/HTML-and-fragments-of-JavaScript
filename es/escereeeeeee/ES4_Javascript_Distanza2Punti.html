@@ -1,0 +1,83 @@
+<html>
+    <head >
+        <link rel="stylesheet" href="ES4_CSS_Distanza2Punti.css" />
+        <title >Distanza Tra Due Punti</title>
+        <script>
+        let x1,x2,x3,y1,y2,y3,ris;
+            function mostra() {
+                    // Raccolta Valori
+                    x1 = parseInt(document.getElementById('x1').value) || parseInt(0);
+                    x2 = parseInt(document.getElementById('x2').value) || parseInt(0);
+                    y1 = parseInt(document.getElementById('y1').value) || parseInt(0);
+                    y2 = parseInt(document.getElementById('y2').value) || parseInt(0);
+                    // calcolo
+                    x3 = parseInt((x2-x1) * (x2-x1));
+                    y3=parseInt((y2-y1) * (y2-y1));
+                    ris= parseInt(Math.sqrt(x3+y3));
+                    
+                if(x1 === 69){
+                    document.getElementById("visual").innerHTML = "Hai Sbloccato Il Sugo !";
+                } else{
+                    document.getElementById("visual").innerHTML = ris;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+<h1 class="titolo"><center>Distanza Tra Due Punti</center></h1>
+<div class="tabella"> 
+<p > <!-- Tabella Punto 1-->
+    <h4>Coordinate 1° Punto:</h4>
+    <table>
+    <tr>
+    <td>
+    <h5>Inserisci X </h5>
+    </td>
+    <td>
+    <h5>Inserisci Y</h5>
+    </td>
+    </tr>
+<tr>
+    <td>
+    <input type="number" value="Inserisci X" id="x1">
+    </td>
+    <td>
+    <input type="number" value="Inserisci Y" id="y1">   
+    </td>
+</tr>   
+</table>
+</p>
+<p> <!-- Tabella Punto 2-->
+    <h4>Coordinate 2° Punto:</h4>
+    <table>
+        <tr>
+        <td>
+        <h5>Inserisci X </h5>
+        </td>
+        <td>
+        <h5>Inserisci Y</h5>
+        </td>
+        </tr>
+    <tr>
+        <td>
+        <input type="number" value="Inserisci X" id="x2"> 
+        </td>
+        <td>
+        <input type="number" value="Inserisci Y" id="y2">   
+        </td>
+    </tr>   
+    </table>
+</p>
+</div>
+<p>
+    <h3>Risultato:</h3>
+
+    <input type="button" onclick="mostra();" value="Calcola" class="puls">
+    
+    <output type="text" id="visual" class="output">
+    
+    
+</p>
+    </body>
+</html>
